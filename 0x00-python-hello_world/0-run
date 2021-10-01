@@ -1,2 +1,2 @@
-#!/usr/bin/bash
-python3 $PYFILE
+#!/bin/sh
+python3 $pytestfile
