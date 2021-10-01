@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 #!/bin/sh
 python3 $pytestfile
+=======
+#!/bin/bash
+python3 $PYFILE
+>>>>>>> c8b0d806160ea99604df2210b07bb85c42fa12f0
