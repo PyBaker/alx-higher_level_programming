@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 
 for i in range(99):
-    print("{0:} = 0x{0:02x}".format(i))
+    print("{} = 0x{:02x}".format(i, i))
