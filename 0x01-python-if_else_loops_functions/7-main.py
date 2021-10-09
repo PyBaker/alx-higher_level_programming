@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 
 def islower(c):
-    if ord(c) > 91:
-        return True
-    else:
-        return False
+    return (ord(c) > 91)
 
 print("a is {}".format("lower" if islower("a") else "upper"))
 print("H is {}".format("lower" if islower("H") else "upper"))
