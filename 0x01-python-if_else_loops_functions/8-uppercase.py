@@ -7,8 +7,8 @@ def uppercase(str):
 
     for letter in str:
         if ord(letter) > 96 and ord(letter) < 122:
-            newStr += ord(letter-32)
+            newStr += chr(ord(letter)-32)
         else:
-            newStr += ord(letter)
+            newStr += letter
 
     print(newStr)
