@@ -4,4 +4,3 @@
 def print_last_digit(number):
     print("{}".format(int(str(number)[-1])), end='')
     return(abs(number) % 10)
-
