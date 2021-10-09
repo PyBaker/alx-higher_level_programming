@@ -11,4 +11,4 @@ def uppercase(str):
         else:
             newStr += letter
 
-    print(newStr)
+    print("[]".format(newStr))
