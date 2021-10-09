@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 
-
 def uppercase():
 
     for i in range(122, 96, -2):
