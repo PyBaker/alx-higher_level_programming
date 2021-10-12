@@ -8,4 +8,6 @@ if __name__ == "__main__":
     parser.add_argument('--add', dest='func', default=sum)
     args = parser.parse_args()
 
-    print("{}".format(args.func(args.nums)))
+    print("{} is FUNCTION".format(args.func))
+    print("{} is LIST".format(args.nums))
+    print("{} is the function call ".format(args.func(args.nums)))

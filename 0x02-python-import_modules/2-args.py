@@ -3,7 +3,8 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Prints arguments")
-    parser.add_argument('strings', type=str, metavar='', nargs='+', help='string arguments')
+    parser.add_argument('strings', type=str, metavar='', nargs='+',
+                        help='string arguments')
     args = parser.parse_args()
     count = len(args.strings) - 1
 
