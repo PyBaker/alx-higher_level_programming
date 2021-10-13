@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+
+def no_c(my_string):
+
+    d = {i: None for i in 'cC'}
+    print(d,'\n')
+    return(my_string.translate(d))
