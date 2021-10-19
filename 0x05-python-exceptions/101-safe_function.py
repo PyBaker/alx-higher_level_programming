@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+
+
 def safe_function(fct, *args):
-    #count = 0
+    ''' catches errors when function call has errors'''
     res = None
     try:
         res = fct(*args)
