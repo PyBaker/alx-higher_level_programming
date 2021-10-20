@@ -2,5 +2,5 @@
 
 
 class Square:
-    ''' class for square calculations'''
+    """class for square calculations"""
         pass
