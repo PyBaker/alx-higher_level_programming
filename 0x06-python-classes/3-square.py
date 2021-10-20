@@ -7,6 +7,9 @@ class Square:
     Defines a square
 
     """
+    def area(self):
+        return self.__size ** 2
+
     def __init__(self, size=0):
         """
         Initialize a square
