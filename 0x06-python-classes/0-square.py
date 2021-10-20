@@ -3,6 +3,4 @@
 
 class Square:
     ''' class for square calculations'''
-    def square():
-        '''define dimenstions of square'''
         pass
