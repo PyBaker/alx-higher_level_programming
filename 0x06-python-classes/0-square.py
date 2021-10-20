@@ -3,4 +3,4 @@
 
 class Square:
     """class for square calculations"""
-        pass
+    pass
