@@ -3,6 +3,15 @@
 
 
 class Square:
-    """ A simple Square class """
+    """
+    Defines a square
+
+    """
     def __init__(self, size):
+        """
+        Initialize a square
+
+        Args:
+        size(int) = size of a square
+        """
         self.__size = size
