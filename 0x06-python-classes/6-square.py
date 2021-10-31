@@ -52,13 +52,9 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            ''' making a 2-dimenstional array is better as this method is a
-            shorter way to display a shape (rectangle or square
-            print('\n'.join([''.join(['#' for element in range(rows)])
-                                                for col in range(column)]))
-            row = length
-            column = width
+            print("\n" * self.__position[1], end="")
+            print('\n'.join([" " * self.__position[0] + '#' * self.__size] * self.__size))
 
-            therefore row and column must be set to self.__size
-            '''
-            print('\n'.join(['#' * self.__size] * self.__size))
+# my_square = Square(3, (0, 1))
+# my_square.my_print()
+# print(my_square.position)
