@@ -53,8 +53,5 @@ class Square:
             print()
         else:
             print("\n" * self.__position[1], end="")
-            print('\n'.join([" " * self.__position[0] + '#' * self.__size] * self.__size))
-
-# my_square = Square(3, (0, 1))
-# my_square.my_print()
-# print(my_square.position)
+            print('\n'.join([" " * self.__position[0]
+                            + '#' * self.__size] * self.__size))
