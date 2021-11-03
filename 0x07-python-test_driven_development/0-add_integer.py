@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' This module tests adds two numbers and casts floats to int'''
 
+
 def add_integer(a, b=98):
     ''' return sum of two numbers '''
     if not isinstance(a, (int, float)):
