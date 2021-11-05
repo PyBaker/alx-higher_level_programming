@@ -12,11 +12,11 @@ def say_my_name(first_name, last_name=""):
     else:
         raise TypeError("{:s} must be a string"
                         .format('last_name' if isinstance(first_name, str)
-                            else 'first_name'))
+                                else 'first_name'))
+
 
 def main():
-    say_my_name(4,'Hello')
-
+    say_my_name(4, 'Hello')
 
 
 if __name__ == "__main__":
