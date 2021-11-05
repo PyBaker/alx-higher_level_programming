@@ -6,6 +6,7 @@ say_my_name --> prints string with first name and last name
 
 
 def say_my_name(first_name, last_name=""):
+    ''' This Function will print the given first and last name'''
 
     if isinstance(first_name, str) and isinstance(last_name, str):
         print("My name is {0:s} {1:s}".format(first_name, last_name))
