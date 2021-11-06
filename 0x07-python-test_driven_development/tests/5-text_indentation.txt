@@ -1,0 +1,50 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+
+>>> text_indentation(''' hello there i'm jsut in the bulldign tryingto get a afeel lof how the peopel in here arefeeling abot the new weather we're having this seadon of giving and all you konw''')
+hello there i'm jsut in the bulldign tryingto get a afeel lof how the peopel in here arefeeling abot the new weather we're having this seadon of giving and all you konw
+
+
+
+>>> text_indentation(''' hel.lo there. i'm jsut in the. bulldign tryingto get a afeel lof how the peopel inD?D here arefeelDD?Ding abot the ne.w? weather we're having this seadon of giving an/d all you ko.nw''')
+hel.
+<BLANKLINE>
+lo there.
+<BLANKLINE>
+i'm jsut in the.
+<BLANKLINE>
+bulldign tryingto get a afeel lof how the peopel inD?
+<BLANKLINE>
+D here arefeelDD?
+<BLANKLINE>
+Ding abot the ne.
+<BLANKLINE>
+w?
+<BLANKLINE>
+weather we're having this seadon of giving an/d all you ko.
+<BLANKLINE>
+nw
+
+
+
+
+>>> text_indentation(7)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+
+
+
+>>> text_indentation(7.4)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+
+
+>>> text_indentation(str)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
