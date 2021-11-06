@@ -1,27 +1,18 @@
-ay_my_name = __import__("3-say_my_name").say_my_name
->>> say_my_name("Dave", "Gas")
-My name is Dave Gas
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+>>> say_my_name("Bob")
+My name is Bob
 >>> say_my_name(5, "hello")
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-    File "/home/joe/alex/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 13, in say_my_name
+    File "/home/joe/alex/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 14, in say_my_name
         raise TypeError("{:s} must be a string"
 TypeError: first_name must be a string
 >>> say_my_name("James", 5)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-    File "/home/joe/alex/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 13, in say_my_name
+    File "/home/joe/alex/alx-higher_level_programming/0x07-python-test_driven_development/3-say_my_name.py", line 14, in say_my_name
         raise TypeError("{:s} must be a string"
 TypeError: last_name must be a string
->>> say_my_name()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: say_my_name() missing 1 required positional argument: 'first_name'
->>> say_my_name("Bob")
-My name is Bob
->>> say_my_name("Bob", "james", "thomas")
-Traceback (most recent call last):
-File "<stdin>", line 1, in <module>
-TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
->>>
-
+>>> say_my_name("Dave", "Gas")
+My name is Dave Gas
