@@ -9,15 +9,15 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_ordered_list(self):
     """Test an ordered list of integers."""
-    ordered = [1, 2, 3, 4]
-    self.assertEqual(max_integer(ordered), 4)
+    ordered_list = [1, 2, 3, 4]
+    self.assertEqual(max_integer(ordered_list), 4)
 
     def test_unordered_list(self):
     """Test an unordered list of integers."""
-    unordered = [1, 5, 4, 3]
-    self.assertEqual(max_integer(unordered), 5)
+    unordered_list = [1, 5, 4, 3]
+    self.assertEqual(max_integer(unordered_list), 5)
 
-    def test_max_at_begginning(self):
+    def test_max_at_beginning(self):
     """Test a list with a beginning max value."""
     max_at_first index = [4, 3, 2, 1]
     self.assertEqual(max_integer(max_at_first_index), 4)
