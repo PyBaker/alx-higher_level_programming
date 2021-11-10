@@ -41,14 +41,5 @@ class Square(Rectangle):
 
     def __init__(self, size):
         """ initialises Square class """
-        self.integer_validator("side", size)
+        super().__init__(size, size)
         self.__size = size
-
-    def area(self):
-        """ Extends method from BaseGeometry and returns area of Square """
-        return self.__size ** 2
-
-    def __str__(self):
-        """ returns name of shape and dimensions """
-        return "[{:s}] {:d}\\{:d}".format(self.__class__.__name__,
-                                          self.__size, self.__size)
