@@ -1,41 +1,11 @@
 #!/usr/bin/python3
-""" Module 5-base_geometry """
+""" Module 10-Square
+    Contains a class Square with is a subclass of Rectangle
+    Order:
+        BaseGeometry --> Rectangle --> Square
+"""
 
-
-class BaseGeometry:
-    """ class for base_geometry """
-
-    def area(self):
-        """ Will raise exeption when called """
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        """ validated integer """
-        if type(value) is not int:
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
-
-
-class Rectangle(BaseGeometry):
-    """ Class for Rectangle shapes """
-
-    def __init__(self, width, height):
-        """ initialises Rectangle class """
-        super().integer_validator("width", width)
-        super().integer_validator("height", width)
-        self.__width = width
-        self.__height = height
-
-    def area(self):
-        """ Extends method from BaseGeometry and returns area of Rectangle """
-        return self.__height * self.__width
-
-    def __str__(self):
-        """ returns name of shape and dimensions """
-        return "[{:s}] {:d}\\{:d}".format(self.__class__.__name__,
-                                          self.__width, self.__height)
-
+Rectangle = __import__("9-rectangle").Rectangle
 
 class Square(Rectangle):
     """ Class for Square shapes """
@@ -44,3 +14,5 @@ class Square(Rectangle):
         """ initialises Square class """
         super().__init__(size, size)
         self.__size = size
+
+print(issubclass(Square, Rectangle))
