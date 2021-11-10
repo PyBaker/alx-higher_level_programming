@@ -36,6 +36,7 @@ class Rectangle(BaseGeometry):
         return "[{:s}] {:d}\\{:d}".format(self.__class__.__name__,
                                           self.__width, self.__height)
 
+
 class Square(Rectangle):
     """ Class for Square shapes """
 
