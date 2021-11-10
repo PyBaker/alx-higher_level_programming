@@ -7,6 +7,8 @@
 
 Rectangle = __import__("9-rectangle").Rectangle
 
+# print(Rectangle)
+
 class Square(Rectangle):
     """ Class for Square shapes """
 
@@ -14,5 +16,3 @@ class Square(Rectangle):
         """ initialises Square class """
         super().__init__(size, size)
         self.__size = size
-
-print(issubclass(Square, Rectangle))
