@@ -28,10 +28,10 @@ class Rectangle(BaseGeometry):
         self.__height = height
 
     def area(self):
-        """ Calculate the area of Rectangle """
+        """ Extends method from BaseGeometry and returns area of Rectangle """
         return self.__height * self.__width
 
     def __str__(self):
-        return "[{}] {}\{}".format(self.__class__.__name__, self.__width, self.__height)
-
-
+        """ Returns name of shape and dimensions """
+        return "[{:s}] {:d}\\{:d}".format(self.__class__.__name__,
+                                          self.__width, self.__height)
