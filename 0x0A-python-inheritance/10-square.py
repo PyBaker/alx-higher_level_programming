@@ -7,7 +7,6 @@
 
 Rectangle = __import__("9-rectangle").Rectangle
 
-# print(Rectangle)
 
 class Square(Rectangle):
     """ Class for Square shapes """
