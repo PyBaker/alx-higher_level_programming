@@ -20,4 +20,4 @@ class Square(Rectangle):
     def __str__(self):
         """ Returns name of shape and dimensions """
         return "[{:s}] {:d}\\{:d}".format(self.__class__.__name__,
-                                          self.__width, self.__height)
+                                          self.__size, self.__size)
