@@ -9,6 +9,7 @@
 
     Methods:
         to_json(self) --> retrieves a dictionary representation of Student
+
 """
 
 
@@ -25,3 +26,4 @@ class Student:
     def to_json(self):
         """ returns dictionary representation of student """
         return self.__dict__
+
