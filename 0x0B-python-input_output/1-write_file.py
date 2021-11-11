@@ -1,4 +1,4 @@
-##!/usr/bin/python3
+#!/usr/bin/python3
 """ Module 1-write_file:
     Contains:
         Function write_file() --> writes a string to a text file
