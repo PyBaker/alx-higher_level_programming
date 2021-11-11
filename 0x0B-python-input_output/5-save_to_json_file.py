@@ -9,4 +9,4 @@ import json
 def save_to_json_file(my_obj, filename):
     """ Writes python data as JSON to file """
     with open(filename, "w", ecoding="UTF-8") as f:
-        f.write(json.dump(my_obj))
+        json.dump(my_obj, f)
