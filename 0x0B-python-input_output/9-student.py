@@ -17,7 +17,13 @@ class Student:
     """ Defines a student class """
 
     def __init__(self, first_name, second_name, age):
-        """ initiallises student attributes """
+        """ initiallises student attributes
+
+            Args:
+                first_name (str): The first name of the student.
+                last_name (str): The last name of the student.
+                age (int): The age of the student.
+        """
 
         self.first_name = first_name
         self.second_name = second_name
@@ -26,4 +32,3 @@ class Student:
     def to_json(self):
         """ returns dictionary representation of student """
         return self.__dict__
-
