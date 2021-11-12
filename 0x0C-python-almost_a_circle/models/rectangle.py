@@ -36,9 +36,9 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         if type(value) is not int:
-            raise typeerror("height must be an integer")
+            raise TypeError("height must be an integer")
         elif value <= 0:
-            raise valueerror("height must be > 0")
+            raise ValueError("height must be > 0")
         else:
             self.__height = value
 
@@ -49,9 +49,9 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         if type(value) is not int:
-            raise typeerror("x must be an integer")
+            raise TypeError("x must be an integer")
         elif x < 0:
-            raise valueerror("x must be >= 0")
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
