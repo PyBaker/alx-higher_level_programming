@@ -24,6 +24,7 @@ class Student:
         """ returns dictionary representation of student """
         if type(attrs) == list and all(type(x) == str for x in attrs):
             # return
-            return {item: self.__dict__.get(item) for item in attrs if item in self.__dict__}
+            return {item: self.__dict__.get(item)
+                    for item in attrs if item in self.__dict__}
         else:
             return self.__dict__
