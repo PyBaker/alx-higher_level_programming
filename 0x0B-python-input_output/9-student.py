@@ -1,15 +1,6 @@
 #!/usr/bin/python3
 """ Module ./9-student.py
     Defines a Student class with fields and methods
-
-    Attributes:
-        first_name
-        second_name
-        age
-
-    Methods:
-        to_json(self) --> retrieves a dictionary representation of Student
-
 """
 
 
@@ -31,4 +22,4 @@ class Student:
 
     def to_json(self):
         """ returns dictionary representation of student """
-        return self.__dict__
+        return self.__dict__()
