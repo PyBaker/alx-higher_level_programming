@@ -35,7 +35,6 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        print("height is {}".format(value))
         if type(value) is not int:
             raise typeerror("height must be an integer")
         elif value <= 0:
