@@ -75,6 +75,11 @@ class Rectangle(Base):
                 elif key == "y":
                     self.y = value
 
+    def to_dictionary(self):
+        """ Returns dictionary representation of Rectangle """
+        return self.__dict__
+
+
     def __str__(self):
         """ overrides __str__ magic method to custom text """
         return ("[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}"
