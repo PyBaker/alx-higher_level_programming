@@ -25,7 +25,8 @@ class Rectangle(Base):
         print("\n".join(["#" * self.__width] * self.__height))
 
     def __str__(self):
-        return "[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d} \
+        """ overrides __str__ magic method to custom text """
+        return "[ hello {:s}] ({:d}) {:d}/{:d} - {:d}/{:d} \
                 ".format(self.__class__.__name__, self.id,
                          self.__x, self.__y, self.__width, self.height)
 
