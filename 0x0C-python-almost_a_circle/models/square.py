@@ -17,6 +17,47 @@ class Square(Rectangle):
             .format(self.__class__.__name__, self.id,
                     self.x, self.y, self.size)
 
+    def update(self, *args, **kwargs):
+        """ Updates the Square
+
+        Args:
+            *args(ints): New attribute values.
+            1st argument --> id attribute
+            2nd argument --> size attribute
+            3rd argument --> x attribute
+            4th argument --> y attribute
+
+            kwargs(dict)
+        """
+        if len(args) != 0:
+            for index, arg in enumerate(args):
+                if index == 0:
+                    if arg is None:
+                        self.__init__(self.width, self.heigh, self.x, self.y)
+                    else:
+                        self.id = arg
+                elif index == 1:
+                    self.size = arg
+                elif index == 2:
+                    self.x = arg
+                elif index == 3:
+                    self.y = arg
+                break
+
+        elif kwargs and len(kwargs) != 0:
+            for key, value in kwargs.items():
+                if key == "id":
+                    if value is None:
+                        self.__init__(self.sizej, self.x, self.y)
+                    else:
+                        self.id = value
+                elif key == "size":
+                    self.size = value
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
+
     @property
     def size(self):
         """ get size """
