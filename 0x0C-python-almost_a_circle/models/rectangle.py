@@ -40,6 +40,8 @@ class Rectangle(Base):
             3rd argument --> height attribute
             4th argument --> x attribute
             5th argument --> y attribute
+
+            kwargs(dict)
         """
         if len(args) != 0:
             for index, arg in enumerate(args):
@@ -57,8 +59,8 @@ class Rectangle(Base):
                 elif index == 4:
                     self.y = arg
 
-        if len(kwargs) != 0:
-            for key, value in enumerate(kwargs):
+        elif kwargs and len(kwargs) != 0:
+            for key, value in kwargs.items():
                 if key == "id":
                     if value is None:
                         self.__init__(self.width, self.heigh, self.x, self.y)
@@ -66,7 +68,7 @@ class Rectangle(Base):
                         self.id = value
                 elif key == "width":
                     self.width = value
-                elif key == "heigh":
+                elif key == "height":
                     self.height = value
                 elif key == "x":
                     self.x = value
