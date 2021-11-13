@@ -42,7 +42,7 @@ class Square(Rectangle):
                     self.x = arg
                 elif index == 3:
                     self.y = arg
-            break
+            return None
 
         elif kwargs and len(kwargs) != 0:
             for key, value in kwargs.items():
