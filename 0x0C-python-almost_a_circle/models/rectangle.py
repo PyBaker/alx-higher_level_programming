@@ -28,12 +28,21 @@ class Rectangle(Base):
         #        .format(self.id, self.__x,
         #                                self.__y, self.__width, self.__height))
         # self.__class__.__name__,
-
+    '''
     def __str__(self):
         """ overrides __str__ magic method to custom text """
         return ("[Rectangle] ({}) {}/{} - {}/{} \
                 ".format(self.id,
                          self.__x, self.__y, self.__width, self.height))
+    '''
+    def __str__(self):
+        '''method __str__
+        '''
+
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
+                self.__y, self.__width, self.__height))
+
+
 
     @property
     def width(self):
