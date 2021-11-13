@@ -26,8 +26,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """ overrides __str__ magic method to custom text """
-        return "[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.__class__.__name__,
-            self.id, self.__x, self.__y, self.__width, self.height)
+        return ("[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}"
+                .format(self.__class__.__name__, self.id,
+                        self.__x, self.__y, self.__width, self.height))
 
     @property
     def width(self):
