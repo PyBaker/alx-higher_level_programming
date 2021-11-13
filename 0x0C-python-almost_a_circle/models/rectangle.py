@@ -27,12 +27,12 @@ class Rectangle(Base):
         # return ("[Rectangle] ({}) {}/{} - {}/{}"
         #        .format(self.id, self.__x,
         #                                self.__y, self.__width, self.__height))
-
+        # self.__class__.__name__,
 
     def __str__(self):
         """ overrides __str__ magic method to custom text """
-        return ("[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d} \
-                ".format(self.__class__.__name__, self.id,
+        return ("[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d} \
+                ".format(self.id,
                          self.__x, self.__y, self.__width, self.height))
 
     @property
