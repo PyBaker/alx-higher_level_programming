@@ -48,30 +48,32 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """ get x """
         return self.__x
 
     @x.setter
     def x(self, value):
-        print("setting x ={}".format(value))
+        """ set x """
 
         if type(value) is not int:
             raise TypeError("x must be an integer")
-        elif x < 0:
+        elif value < 0:
             raise ValueError("x must be >= 0")
-        raise Exception("I'm done with x")
-        self.__x = value
+        else:
+            self.__x = value
 
     @property
     def y(self):
+        """ get y """
         return self.__y
 
     @y.setter
     def y(self, value):
-        """ setting y """
-        print("setting y = {}".format(value))
+        """ set y """
+
         if type(value) is not int:
             raise TypeError("y must be an integer")
-        elif y < 0:
+        elif value < 0:
             raise ValueError("y must be >= 0")
-        raise Exception("I'm done with y")
-        self.__y = value
+        else:
+            self.__y = value
