@@ -77,7 +77,14 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ Returns dictionary representation of Rectangle """
-        return self.__dict__
+        my_dict = {
+                'x':self.x,
+                'y':self.y,
+                'id':self.id,
+                'height':self.height,
+                'width':self.width
+                }
+        return my_dict
 
     def __str__(self):
         """ overrides __str__ magic method to custom text """
