@@ -31,7 +31,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """ overrides __str__ magic method to custom text """
-        return ("[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d} \
+        return ("[Rectangle] ({}) {}/{} - {}/{} \
                 ".format(self.id,
                          self.__x, self.__y, self.__width, self.height))
 
