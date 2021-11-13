@@ -30,6 +30,33 @@ class Rectangle(Base):
         print(y_coordinates, end="")
         print(shape)
 
+    def update(self, *args):
+        """ Updates the Rectangle
+
+        Args:
+            *args(ints): New attribute values.
+            1st argument --> id attribute
+            2nd argument --> width attribute
+            3rd argument --> height attribute
+            4th argument --> x attribute
+            5th argument --> y attribute
+        """
+        if len(args) != 0:
+            for index, arg in enumerate(args):
+                if index == 0:
+                    if arg is None:
+                        self.__init__(self.width, self.heigh, self.x, self.y)
+                    else:
+                        self.id = arg
+                elif index == 1:
+                    self.width = arg
+                elif index == 2:
+                    self.height = arg
+                elif index == 3:
+                    self.x = arg
+                elif index == 4:
+                    self.y = arg
+
     def __str__(self):
         """ overrides __str__ magic method to custom text """
         return ("[{:s}] ({:d}) {:d}/{:d} - {:d}/{:d}"
