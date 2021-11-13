@@ -25,7 +25,7 @@ class Rectangle(Base):
         y_coordinates = "\n" * self.__y
         x_cordinates = " " * self.__x
 
-        shape = "\n".join([ x_cordinates + "#" * self.__width] * self.__height)
+        shape = "\n".join([x_cordinates + "#" * self.__width] * self.__height)
 
         print(y_coordinates, end="")
         print(shape)
