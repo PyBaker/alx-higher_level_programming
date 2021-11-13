@@ -22,7 +22,13 @@ class Rectangle(Base):
 
     def display(self):
         """ Prints rectangle with '#' symbol """
-        print("\n".join(["#" * self.__width] * self.__height))
+        y_coordinates = "\n" * self.__y
+        x_cordinates = " " * self.__x
+
+        shape = "\n".join([ x_cordinates + "#" * self.__width] * self.__height)
+
+        print(y_coordinates, end="")
+        print(shape)
 
     def __str__(self):
         """ overrides __str__ magic method to custom text """
