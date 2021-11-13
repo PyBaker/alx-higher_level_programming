@@ -11,7 +11,17 @@ class Square(Rectangle):
         """ initialises Square attributes """
         super().__init__(size, size, x, y, id)
 
-    def __str__(self)
+    def __str__(self):
         """ Return custom string """
         return "[{:s}] ({:d}) {:d}/{:d} - {:d}"\
-                .format(self.__name__, self.id, self.x, self.y, self.size)
+                .format(self.__class__.__name__, self.id, self.x, self.y, self.width)
+
+    '''
+    @property
+    def size:
+        return self.__size
+
+    @size.getter
+    def size:
+        super().
+    '''
