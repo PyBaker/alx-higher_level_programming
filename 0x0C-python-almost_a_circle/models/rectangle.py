@@ -2,7 +2,7 @@
 """ Module ./rectangle.py
     Initialises a Rectangle Class (child class of Base Class)
 """
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
