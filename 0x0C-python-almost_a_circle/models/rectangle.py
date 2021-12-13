@@ -26,7 +26,7 @@ class Rectangle(Base):
         x_cordinates = " " * self.__x
 
         shape = "\n".join([x_cordinates + "#" * self.__width] * self.__height)
-
+        # This
         print(y_coordinates, end="")
         print(shape)
 
@@ -92,6 +92,7 @@ class Rectangle(Base):
                 .format(self.__class__.__name__, self.id,
                         self.__x, self.__y, self.__width, self.height))
 
+    """ Getter and Setter for width """
     @property
     def width(self):
         """ get width """
@@ -107,6 +108,7 @@ class Rectangle(Base):
         else:
             self.__width = value
 
+    """ Getter and Setter for height """
     @property
     def height(self):
         """ get height """
@@ -122,6 +124,7 @@ class Rectangle(Base):
         else:
             self.__height = value
 
+    """ Getter and Setter for x """
     @property
     def x(self):
         """ get x """
@@ -138,6 +141,7 @@ class Rectangle(Base):
         else:
             self.__x = value
 
+    """ Getter and Setter for y """
     @property
     def y(self):
         """ get y """

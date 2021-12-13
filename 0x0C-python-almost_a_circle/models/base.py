@@ -33,3 +33,8 @@ class Base:
                 json.dump([], file)
             else:
                 json.dump(list_objs, file)
+
+    @classmethod
+    def create(cls, **dictionary):
+        super().__init__(34, 23, 10, 3)
+        return cls.update(dictionary)
