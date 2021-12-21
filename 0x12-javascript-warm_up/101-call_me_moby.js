@@ -1,7 +1,7 @@
 exports.callMeMoby = (x, theFunction) => {
-    let count = 0;
-    while (count < x) {
-        theFunction();
-        count++;
-    };
+  let count = 0;
+  while (count < x) {
+    theFunction();
+    count++;
+  }
 };
