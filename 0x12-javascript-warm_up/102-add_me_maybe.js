@@ -1,6 +1,7 @@
 #!/usr/bin/node
 
-exports.addMyMaybe = (number, theFunction) => {
+exports.addMeMaybe = (number, theFunction) => {
   number++;
+  console.log(number);
   theFunction(number);
 };
