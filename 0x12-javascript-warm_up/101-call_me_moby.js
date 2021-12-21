@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 exports.callMeMoby = (x, theFunction) => {
   //just for control
   let count = 0;
@@ -6,3 +8,4 @@ exports.callMeMoby = (x, theFunction) => {
     count++;
   }
 };
+
