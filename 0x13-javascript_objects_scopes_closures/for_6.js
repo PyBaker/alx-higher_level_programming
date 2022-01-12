@@ -1,7 +1,6 @@
 #!/usr/bin/node
 
 
-s1.charPrint('O');
 
 const Square = require('./6-square');
 
