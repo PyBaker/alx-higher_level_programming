@@ -1,12 +1,16 @@
 #!/usr/bin/node
 
-const Rectangle = require('./4-rectangle');
-class Square extends Rectangle {
+const SquareFrom5 = require('./5-square');
+class Square extends SquareFrom5 {
   constructor (size) {
     super(size, size);
   }
 
   // prints squre with variable c
+  charPrint (c) {
+    super.print(c);
+  }
+  /*
   charPrint (c) {
     if (c === undefined) c = 'X';
     const count = [...Array(this.height).keys()];
@@ -15,5 +19,6 @@ class Square extends Rectangle {
       console.log(c.repeat(this.width));
     }
   }
+  */
 }
 module.exports = Square;

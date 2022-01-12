@@ -8,12 +8,11 @@ class Rectangle {
   }
 
   // prints shape using 'X' string
-  print (letter) {
-    if (letter == undefined) letter = 'X' 
+  print () {
     const count = [...Array(this.height).keys()];
     // for (let i in count)
     for (let i = 0; i < count.length; i++) {
-      console.log(letter.repeat(this.width));
+      console.log('X'.repeat(this.width));
     }
   }
 
